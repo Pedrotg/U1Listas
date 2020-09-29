@@ -1,0 +1,73 @@
+//Declarar nuestra lista
+		List miprimerlista = new ArrayList(); 
+		
+		//Agregar un nuevo dato
+		miprimerlista.add(92);
+		miprimerlista.add("Pedro");
+		miprimerlista.add("José");
+		miprimerlista.add("Matías");
+		miprimerlista.add("Pedro");
+		miprimerlista.add("María");
+		miprimerlista.add("Wendy");
+		miprimerlista.add("Lola");
+		miprimerlista.add("José");
+		miprimerlista.add("Matías");
+		
+		//Quitar elemento
+		miprimerlista.remove(0);
+				
+		//Sustituir un elemento de la lista
+		miprimerlista.set(0, 90);
+		miprimerlista.set(7, "Lalo");
+		
+		//obtener el valor de la posición
+		System.out.println(miprimerlista.get(1));
+				
+		//Obtener ciertos valores solamente
+		System.out.println(miprimerlista.subList(1, 9));
+				
+		//Visualizar toda la lista
+		System.out.println(miprimerlista);
+		
+		//tamaño de mi lista
+		System.out.println(miprimerlista.size());
+		
+		//segunda forma de recorrer una lista
+		for (int i = 0; i < miprimerlista.size(); i++) {
+			System.out.println(miprimerlista.get(i)); 
+		}
+		
+		//tercera forma de recorrer una lista
+		Iterator i = miprimerlista.iterator();
+				
+		while(i.hasNext()) {
+			System.out.println(i.next());  
+		}
+		
+		//cuarta forma de recorrer
+ 		for (String nombre : lista) {
+ 
+ 			System.out.println(nombre);
+		}
+		
+		//borrar todos los datos de la lista
+		miprimerlista.clear();
+		
+		//saber si mi lista está vacía
+        if(miprimerlista.isEmpty()) 
+        	System.out.println("está vacía");
+        else
+        	System.out.println("Contiene datos");
+        	
+        	
+        //Saber si nuestra lista contiene algún elemento en específico
+        
+        if(miprimerlista.contains("julia")) 
+        	System.out.println("Sí lo contiene");
+        else
+        	System.out.println("No lo contiene");
+        	
+          //Saber que tipo de dato hay en cierta localización de la lista
+		System.out.println(((Object)miprimerlista.get(0)).getClass().getSimpleName());
+        System.out.println(((Object)miprimerlista.get(1)).getClass().getSimpleName());
+		
