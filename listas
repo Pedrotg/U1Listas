@@ -1,6 +1,9 @@
 //Declarar nuestra lista
 		List miprimerlista = new ArrayList(); 
 		
+		//Lista con tipo de dato
+		List <String>miprimerlista = new ArrayList<String>(); 
+		
 		//Agregar un nuevo dato
 		miprimerlista.add(92);
 		miprimerlista.add("Pedro");
